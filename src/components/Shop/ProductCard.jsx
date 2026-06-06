@@ -37,6 +37,9 @@ const ProductCard = ({ product, index }) => {
   const handleAddToCart = (e) => {
     e.preventDefault();
     e.stopPropagation();
+
+    if (!product.inStock) return;
+
     addToCart({
       id: product.id,
       name: product.name,
@@ -79,7 +82,7 @@ const ProductCard = ({ product, index }) => {
 
           {/* Оверлей при наведении */}
           <AnimatePresence>
-            {isHovered && (
+            {isHovered && product.inStock && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

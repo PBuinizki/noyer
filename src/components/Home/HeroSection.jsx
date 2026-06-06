@@ -83,7 +83,9 @@ const HeroSection = () => {
             <Link to="/shop" className="btn-primary">
               Смотреть коллекцию
             </Link>
-            <button className="btn-secondary">Узнать больше</button>
+            <Link to="/about" className="btn-secondary">
+              Узнать больше
+            </Link>
           </div>
         </div>
       </div>
