@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCartStore } from "../../store/cartStore";
-import Toast from "../ui/Toast";
+import Toast from "../UI/Toast";
 
 import gsap from "gsap";
 
